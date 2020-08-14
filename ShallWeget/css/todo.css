@@ -1,0 +1,276 @@
+::placeholder {
+    font-family: 'Julius Sans One';
+
+}
+
+#todoBtnDiv {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant SC', sans-serif;
+}
+
+#todoBtnDiv .textcontainer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#todoBtnDiv .particletext {
+    text-align: center;
+    font-size: 48px;
+    position: relative;
+}
+
+
+#todoBtnDiv .particletext.hearts>.particle {
+    opacity: 0;
+    position: absolute;
+    background-color: #cc2a5d;
+    animation: hearts 3s ease-in infinite;
+}
+
+#todoBtnDiv .particletext.hearts>.particle:before,
+#todoBtnDiv .particletext.hearts>.particle:after {
+    position: absolute;
+    content: '';
+    border-radius: 100px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #cc2a5d;
+}
+
+#todoBtnDiv .particletext.hearts>.particle:before {
+    transform: translateX(-50%);
+}
+
+#todoBtnDiv .particletext.hearts>.particle:after {
+    transform: translateY(-50%);
+}
+
+
+@keyframes hearts {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0%) rotate(45deg);
+    }
+
+    20% {
+        opacity: 0.8;
+        transform: translate(0, -20%) rotate(45deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0, -900%) rotate(45deg);
+    }
+}
+
+/* 여기까지 글자 효과 */
+
+#layout_All {
+    width: 540px;
+    margin: 0 auto;
+}
+
+#scroll {
+    margin-top: 10px;
+    width: 520px;
+    height: 143px;
+    overflow-y: scroll;
+
+}
+
+#scroll::-webkit-scrollbar {
+    display: none;
+}
+
+#header {
+    margin: 0px;
+    /* margin-right:-10;  */
+    padding: 0px;
+    height: 130px;
+
+    color: rgb(226, 168, 168);
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Bungee Shade', 'sans-serif';
+
+    cursor: url("./img/emoji1.png"), auto;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#header:hover {
+    color: rgb(241, 205, 205);
+}
+
+#text_add {
+    text-align: center;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#input_text {
+    border: 2px dotted;
+    border-color: rgb(228, 175, 175);
+
+    position: relative;
+    width:325px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* 왜 안먹음ㅠ */
+/* #text {
+    text-align:right;
+} */
+
+#input_text::placeholder {
+    color: rgb(190, 187, 187);
+    font-weight: blod;
+    text-align: center;
+}
+
+
+
+#Add_btn {
+    border: 2px rgb(228, 175, 175);
+
+    border-radius: 10px;
+    background-color: rgb(194, 166, 166, 0);
+    color: rgb(184, 153, 153);
+    position: absolute;
+    margin-left: -55px;
+    margin-top: 3.5px;
+    /* border: 0; */
+    outline: 0;
+    z-index: 1;
+    cursor: pointer;
+    font-family: 'Julius Sans One';
+
+
+
+}
+
+#Add_btn:hover {
+    color: rgb(158, 88, 88);
+    font-weight: bold;
+}
+
+
+
+#myUL {
+    text-align: center;
+    list-style: none;
+    width: 400px;
+    margin: 0;
+
+}
+
+
+#myUL li {
+
+    cursor: pointer;
+    position: relative;
+    left: 30px;
+    padding: 12px 8px 12px 40px;
+    background: rgb(195, 158, 158);
+    ;
+    transition: 0.3s;
+    font-style: italic;
+    border-radius: 10px;
+
+
+    /* 드레그 금지 */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* 짝수 색 변경 */
+#myUL li:nth-child(2n) {
+    background: rgb(223, 183, 183);
+}
+
+#myUL li:hover {
+    background: rgb(255, 232, 232);
+    color: rgb(223, 158, 158);
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+
+#myUL li:nth-child(2n):hover {
+    background: rgb(255, 232, 232);
+    color: rgb(250, 195, 195);
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+
+
+
+#myUL li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+#myUL ui.checked::brfore {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+#myUL li:nth-child(2n).checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+#myUL li:nth-child(2n).checked::brfore {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.todoclose {
+    /* 절대좌표 위치 */
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.todoclose:hover {
+    background-color: rgb(187, 106, 114);
+    color: white;
+    border-radius: 10px;
+}

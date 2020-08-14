@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* 질문라인 */
+h1 {
+ color: #fff;
+ text-transform: uppercase;
+   font-size: 42px;
+   display: block;
+ margin: 0;
+ line-height: 47px;
+   letter-spacing: 2px;
+   height: 70px;
+   padding-top: 10px;
+}
+.title {
+ transform: translateX(-50%) ;
+ display: block;
+ float: left;
+   left: 50%; 
+   font-family: 'DungGeunMo';
+ position: relative;
+}
+.title span {
+ transform: skew(-10deg);
+ display: block;
+ float: left;
+ text-shadow: #039c17 1px 1px, #858eb4 2px 2px, #858eb4 3px 3px, #858eb4 4px 4px, #161a2c 5px 5px, #161a2c 6px 6px;
+ min-width: 10px;
+ min-height: 10px;
+ position: relative;
+}
+
+
+.title:nth-child(1) {
+ color: #ce69d1;
+}
+.title:nth-child(2) {
+ color: #2b9f5e;
+}
+.title:nth-child(3) {
+ color: #f1c83c;
+}
+
+
+/* 여기까지 질문 라인 액션 */
+
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+  overflow: auto;
+  font-family: DungGeunmo;
+}
+
+.tab button {
+  background-color: rgb(236, 84, 236);
+  color: white;
+  border: none;
+  padding: 8px 13px;
+  font-size: 20px;
+  font-family: 'DungGeunmo';
+  cursor : url('../menu/spoon.png')5 +55,auto;
+  border-radius: 15%;
+  outline: none;
+   }
+
+.tab button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #58f7ba;
+    }
+.btnDiv {
+  float: right;
+  padding-top: 40px;
+  padding-right: 15px;
+}
+  .optDiv{
+  background-color: lightpink;
+  color: white;
+  text-align: center;
+  font-family: 'DungGeunmo';
+  }
+
+#foodBtnDiv {
+  width: 640px;
+  height: 320px;
+  border-style: solid;
+  border-color: rgb(159, 165, 218);
+  border-width: 5px;
+  cursor : url('../menu/spoon.png')5 +55,auto;
+}
+
+.option {
+  /* 옵션선택 툴 */
+  padding-left: 40px;
+  padding-right: 40px;
+  display: inline-flex;
+}
+
+.restartBtn {
+  background-color: #58f7ba;
+  color: white;
+  border: none;
+  padding: 8px 13px;
+  font-size: 17px;
+  font-family: 'DungGeunmo';
+  cursor : url('../menu/spoon.png')5 +55,auto;
+  border-radius: 15%;
+  outline: none;
+  
+}
+.headLine {
+  font-family: DungGeunMo;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
+ #resultLine{
+  font-family: DungGeunMo;
+  padding: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  
+ }
+ .showResult {
+  background-color: rgb(236, 84, 236);
+  color: white;
+  border: none;
+  padding: 8px 13px;
+  font-size: 17px;
+  font-family: 'DungGeunmo';
+  cursor : url('../menu/spoon.png')5 +55,auto;
+  border-radius: 15%;
+  outline: none;
+  
+ }
+ .btnsDiv {
+   float: right;
+   padding-top: 70px;
+   padding-right: 10px;
+  
+ }
+ /* 마지막 다시하기 버튼 */
+ .redo {
+  background-color: #58f7ba;
+  color: white; 
+  border: none;
+  padding: 8px 13px;
+  font-size: 20px;
+  font-family: 'DungGeunmo';
+  cursor : url('../menu/spoon.png')5 +55,auto;
+  border-radius: 15%;
+  outline: none;
+  float: right;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  
+ }
+ /* 선택된 사진 이미지 */
+ .foodImg{
+   border-radius: 50%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 380px;
+   height: 190px;;
+   border-style: dotted;
+   border-color: #58f7ba;
+   border-width: 10px;
+ }
+
+ #checkId{
+  cursor : url('../menu/spoon.png')5 +55,auto;
+ }
+ /* 마지막 창 */
+ .lastWin{
+   height: 320px;
+   width: 640px;;
+   background-color: black;
+ }
+ /* 마지막장 타이틀 */
+ .lastTitle{
+  padding-top: 5px;
+  font-family: 'DungGeunmo';
+  color : #ce69d1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+ }
+ /* 마지막 메뉴 이름 */
+ .lastMenu{
+  font-family: 'DungGeunmo';
+  color : white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 34px;
+  border-top: 10px;
+ }

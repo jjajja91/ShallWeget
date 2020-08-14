@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/shallweget.css">
+    <link rel="stylesheet" type="text/css" href="./css/crazyplantlady.css">
+    <link rel="stylesheet" href="./css/waterTime.css">
+    <link rel="stylesheet" href="./css/menuSeletor.css">
+    <link rel="stylesheet" href="./css/todo.css">
+    <link rel="stylesheet" href="./css/cafein.css">
+    <link rel="stylesheet" href="./css/weather.css">
+    <link rel="stylesheet" href="./css/music_cat.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Julius+Sans+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <title>Shall weget</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+    type="text/javascript"
+    src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7f06281bba2e51cf4292ac9c0df805bb&libraries=services"
+    ></script>
+</head>
+<body>
+    <div class="dropzone">    
+        <div class="expected"></div>
+    </div>
+    <img src="./css/로고.png" alt="" id="logo">
+    <div class="middle">
+        <form class="search-box" action="index.html" method="post">
+          <input type="text" class="input" name="" value="">
+          <button type="button" class="btn" name="button"></button>
+        </form>
+      </div>
+    <div class="menu-wrapper">
+        <div class="menubtn-div">
+            <button type="button" id="menuBtn">
+            </button>
+            <div id="settingInfo">편집모드</div>
+            <button type="button" id="widgetSettingBtn">
+            </button>
+        </div>
+        <div class="menu-div">
+            <div class="tooltip">
+            <button type="button" class="btns" draggable="true" id="cafeinBtn"></button>
+            <span class="tooltiptext">CAFEIN</span>
+            </div>
+            <div class="tooltip">
+            <button type="button" class="btns" draggable="true" id="plantBtn"></button>
+            <span class="tooltiptext">식물</span>
+            </div>
+            <div class="tooltip">
+            <button type="button" class="btns" draggable="true" id="catBtn"></button>
+            <span class="tooltiptext">고양이식빵</span>
+            </div>
+            <div class="tooltip">
+            <button type="button" class="btns" draggable="true" id="todoBtn"></button>
+            <span class="tooltiptext">투두</span>
+            </div>
+            <div class="tooltip">
+            <button type="button" class="btns" draggable="true" id="weatherBtn"></button>
+            <span class="tooltiptext">날씨</span>
+            </div>
+            <div class="tooltip">
+            <button type="button" class="btns" draggable="true" id="waterBtn"></button>
+            <span class="tooltiptext">꼴깍</span>
+            </div>
+            <div class="tooltip">
+            <button type="button" class="btns" draggable="true" id="foodBtn"></button>
+            <span class="tooltiptext">부장님이 자꾸 메뉴 정하게 해서 만든 위젯</span>
+            </div>
+            <div class="tooltip">
+            <button type="button" class="btns" draggable="true" id="neflixBtn"></button>
+            <span class="tooltiptext">네플릭스</span>
+            </div>
+        </div>
+    </div>
+    <script src="./js/shallweget.js">
+    </script>
+     <script
+     src="https://code.jquery.com/jquery-3.5.0.js"
+     integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+     crossorigin="anonymous"
+   ></script>
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+   <script src="./js/moviewidget.js"></script>
+   <script src="./js/crazyplantlady.js"></script>
+   <script src="./js/waterTime.js"></script>
+   <script src="./js/menuSelector.js"></script>
+   <script src="./js/todo.js"></script>
+   <script src="./js/cafein.js"></script>
+   <script src="./js/weather.js"></script>
+   <script src="./js/music_cat.js"></script>
+</body>
+</html>

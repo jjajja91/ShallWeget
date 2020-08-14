@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+        /* 이 아래는 이미지 버튼과 그래프 css */
+        /* 메인 페이지의 이미지 센터로 */
+        #leviMain_page {
+            /* background-color: rgb(85, 218, 255); */
+            /* background-color: rgb(51, 141, 214); */
+            /* background-color: #32BAFA; */
+            background-color: #E0F4FB;
+            text-align: center;
+            margin: 0px auto;
+            padding-top: 10px;
+        }
+
+        #second_page {
+            background-color: #E0F4FB;
+            padding-top: 10px;
+        }
+        
+        #third_page {
+            background-color: #B39374;
+            padding-top: 10px;
+        }
+        
+        #fourth_page {
+            background-color: rgb(241, 177, 15);
+            padding-top: 10px;
+        }
+
+        .leviWaterDrink {
+            width: 480px;
+            height: 320px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10%;
+        }
+
+        .leviMain_name {
+            text-align: center;
+            padding: 0 0 20px 0;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 50px;
+            
+        }
+        
+        .levi_name {
+            text-align: center;
+            padding-bottom: 30px;
+            font-family: 'Righteous', cursive;
+            font-size: 40px;
+        }
+
+        #leviMyProgress {
+            width: 100%;
+            background-color: rgb(224, 224, 224);
+        }
+
+        #leviMyBar1,
+        #leviMyBar2,
+        #leviMyBar3,
+        #leviMyBar4 {
+            width: 0%;
+            height: 0px;
+            text-align: center;
+            line-height: 30px;
+            color: black;
+            padding: 10px 0 10px 0;
+        }
+
+        #leviMyBar2 {
+            background-color: #A7D8EE;
+        }
+
+        #leviMyBar3 {
+            background-color: rgb(117, 83, 86);
+        }
+
+        #leviMyBar4 {
+            background-color: rgb(199, 127, 3);
+        }
+
+        .leviMainWaterImg {
+            width: 85px;
+            height: 85px;
+            border: 0;
+            vertical-align: middle;
+        }
+
+        .leviWaterImg {
+            width: 70px;
+            height: 70px;
+            border: 0;
+            padding-left: 13px;
+            vertical-align: middle;
+        }
+        
+        .Mainquantity {
+            padding-bottom: -29;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 25px;
+        }
+        .quantity {
+            padding-left: 20px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        /* 이 아래는 말풍선 css */
+        /* 메인 페이지의 말풍선 크기 */
+        #leviMain_leviTooltiptext {
+            width: 130px;
+            font-family: 'Sunflower', sans-serif;
+        }
+
+        /* 나머지 페이지의 말풍선 크기 */
+        #leviSecond_leviTooltiptext,
+        #leviThird_leviTooltiptext,
+        #leviFourth_leviTooltiptext {
+            width: 150px;
+            font-family: 'Sunflower', sans-serif;
+        }
+
+
+        .leviTooltip {
+            background-color: transparent !important;
+            /* background-image: transparent !important; */
+            border-color: transparent !important;
+            border: transparent !important;
+            outline: none;
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px Dotted black;
+            padding: 0px 30px 10px 37px;
+        }
+
+        .leviTooltip .leviTooltiptext {
+            visibility: hidden;
+            background-color: black;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+        .leviTooltip .leviTooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+        }
+
+        .leviTooltip:hover .leviTooltiptext {
+            visibility: visible;
+        }
+
+
+        /* 이 아래는 페이지 넘기는 css */
+        /* .leviMySlides {
+            display: none
+        } */
+
+        /* Slideshow container */
+        /* .leviSlideshow_container {
+            max-width: 1000px;
+            position: relative; */
+        /* margin-left:40px; */
+        /* margin: auto; (이거 키면 그래프가 가운데에서 양옆으로 증가함)*/
+        /* } */
+
+        #leviDotdot {
+            text-align: center;
+        }
+
+        .leviDot {
+            cursor: pointer;
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .leviActive,
+        .leviDot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .leviFade {
+            /* -webkit-animation-name: leviFade;
+            -webkit-animation-duration: 1.5s; */
+            animation-name: leviFade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes leviFade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes leviFade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
